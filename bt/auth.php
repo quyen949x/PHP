@@ -17,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"]="POST"){
         }
     }
     if (count($errs)==0){
+      $user =array('name'=>$_POST['email'],'age')
         header("location: success.php");
 }
     }else{
